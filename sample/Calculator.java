@@ -1,26 +1,22 @@
 package sample;
 
-import com.mysql.cj.util.DnsSrv;
-import com.sun.jdi.Value;
 import javafx.fxml.FXML;
-import javafx.geometry.NodeOrientation;
-import javafx.scene.Node;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
-import javafx.scene.control.TextField;
-import javafx.scene.text.Text;
 
 public class Calculator {
+
     @FXML
     private TextArea LCD;
-    @FXML
-    private TextField LCD_AREA;
 
     @FXML
     private Button bt_0;
 
     @FXML
     private Button bt_1;
+
+    @FXML
+    private Button bt_11;
 
     @FXML
     private Button bt_2;
@@ -30,6 +26,9 @@ public class Calculator {
 
     @FXML
     private Button bt_4;
+
+    @FXML
+    private Button bt_41;
 
     @FXML
     private Button bt_5;
@@ -53,22 +52,28 @@ public class Calculator {
     private Button bt_Right_scobe;
 
     @FXML
+    private Button bt_del;
+
+    @FXML
     private Button bt_div;
 
     @FXML
     private Button bt_dot;
 
     @FXML
+    private Button bt_dot1;
+
+    @FXML
     private Button bt_equals;
+
+    @FXML
+    private Button bt_factorial;
 
     @FXML
     private Button bt_minus;
 
     @FXML
     private Button bt_mul;
-
-    @FXML
-    private Text Text_area;
 
     @FXML
     private Button bt_plus;
@@ -485,31 +490,41 @@ public class Calculator {
         String[] opertation ={"*","/","^","^","+","-"};
 
         double num1=0,num2=0;
-        int op_col=0;
+
         int sc_col=0;
 
         for(int i=0;i<text.length();i++){
             if(text.charAt(i)=='(')sc_col++;}
-        /*
+
+        String text_X=text;
 while(sc_col!=0) {
     int sc1 = 0, sc2 = text.length() - 1;
 
     for (int i = 0; i < text.length(); i++) {
         if (text.charAt(i) == '(') sc1 = i;
         if (text.charAt(i) == ')') {
-            sc2 = i;
+            sc2 = i+1;
             break;
-        }
+    }   }
+
+String tmptxt="";
+for(int i=sc1+1;i<sc2-1;i++){
+    tmptxt+=text.charAt(i);
+}
 
 
-    }
-
-
-
+    String temp="";
+    for(int a=0;a<sc1;a++){
+        temp+=text.charAt(a);}
+    temp=temp+calc(tmptxt);
+    for(int a=sc2;a<text.length();a++){
+        temp+=text.charAt(a);}
+    text=temp;
+    sc_col--;
 
 
 }
-        */
+        int op_col=0;
 
         for(int i=0;i<text.length();i++){
             for(int j=0;j<opertation.length;j++){
@@ -521,12 +536,13 @@ while(sc_col!=0) {
         while (op_col!=0){
 
             for(int j=0;j<opertation.length;j=j+2){
-
+if(op_col<=0)break;
                 for(int i=0;i<text.length();i++){
+                    if(op_col<=0)break;
                     if((text.charAt(i)==opertation[j].charAt(0))||(text.charAt(i)==opertation[j+1].charAt(0))){
                         int q2=i+1;
                         t1="";t2="";
-                        while((text.charAt(q2)>='0' &&'9'>=text.charAt(q2))||text.charAt(q2)=='.') {
+                        while((text.charAt(q2)>='0' &&'9'>=text.charAt(q2))||text.charAt(q2)=='.'||text.charAt(q2)=='-') {
                             t2 = t2 + text.charAt(q2);
                             q2++;
                             if(q2>text.length()-1){
@@ -536,7 +552,7 @@ while(sc_col!=0) {
                         int q1=i-1;
 
                         int a1=0;
-                        while((text.charAt(q1)>='0' &&'9'>=text.charAt(q1))||text.charAt(q1)=='.'){
+                        while(((text.charAt(q1)>='0' &&'9'>=text.charAt(q1))||text.charAt(q1)=='.'|| text.charAt(q1)=='-')){
                             t1=text.charAt(q1)+t1;
                             q1--;
                             if(q1<0){
@@ -546,8 +562,12 @@ while(sc_col!=0) {
                         if(a1==0)q1++;
 
                         double result=0;
+                    //  if()
+
                         num1 = Double.parseDouble(t1);
                         num2 = Double.parseDouble(t2);
+                        if(num1<0){op_col=op_col-1;j=opertation.length;}
+                        if(num2<0){op_col=op_col-1;j=opertation.length;}
 
                         switch (text.charAt(i)) //И производим над ними действие, согласно оператору
                         {
@@ -574,11 +594,13 @@ while(sc_col!=0) {
                         temp=temp+String.valueOf(result);
                         for(int a=q2;a<text.length();a++){
                             temp+=text.charAt(a);}
-text="";
+
                         text=temp;
                         break;
 
                     }
+
+
                 }
             }
 

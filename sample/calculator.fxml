@@ -4,28 +4,33 @@
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="545.0" prefWidth="334.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Calculator">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="545.0" prefWidth="393.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Calculator">
    <children>
-      <Button fx:id="bt_equals" layoutX="251.0" layoutY="452.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="=" textAlignment="JUSTIFY" />
-      <Button fx:id="bt_plus" layoutX="251.0" layoutY="382.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="+" textAlignment="JUSTIFY" />
-      <Button fx:id="bt_minus" layoutX="251.0" layoutY="312.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="-" textAlignment="JUSTIFY" />
-      <Button fx:id="bt_mul" layoutX="251.0" layoutY="242.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="*" textAlignment="JUSTIFY" />
-      <Button fx:id="bt_div" layoutX="251.0" layoutY="172.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="/" textAlignment="JUSTIFY" />
-      <Button fx:id="bt_reset" layoutX="181.0" layoutY="452.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="C" textAlignment="JUSTIFY" />
-      <Button fx:id="bt_3" layoutX="181.0" layoutY="382.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="3" textAlignment="JUSTIFY" />
-      <Button fx:id="bt_6" layoutX="181.0" layoutY="312.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="6" textAlignment="JUSTIFY" />
-      <Button fx:id="bt_9" layoutX="181.0" layoutY="242.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="9" textAlignment="JUSTIFY" />
-      <Button fx:id="bt_0" layoutX="111.0" layoutY="452.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="0" textAlignment="JUSTIFY" />
-      <Button fx:id="bt_2" layoutX="111.0" layoutY="382.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="2" textAlignment="JUSTIFY" />
-      <Button fx:id="bt_5" layoutX="111.0" layoutY="312.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="5" textAlignment="JUSTIFY" />
-      <Button fx:id="bt_8" layoutX="111.0" layoutY="242.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="8" textAlignment="JUSTIFY" />
-      <Button fx:id="bt_dot" layoutX="41.0" layoutY="452.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="." textAlignment="JUSTIFY" />
-      <Button fx:id="bt_1" layoutX="41.0" layoutY="382.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="1" textAlignment="JUSTIFY" />
-      <Button fx:id="bt_4" layoutX="41.0" layoutY="312.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="4" textAlignment="JUSTIFY" />
-      <Button fx:id="bt_7" layoutX="41.0" layoutY="242.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="7" textAlignment="JUSTIFY" />
-      <Button fx:id="bt_Right_scobe" layoutX="181.0" layoutY="172.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text=")" textAlignment="JUSTIFY" />
-      <Button fx:id="bt_Left_scobe" layoutX="111.0" layoutY="172.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="(" textAlignment="JUSTIFY" />
-      <Button fx:id="bt_pow" layoutX="41.0" layoutY="172.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="^" textAlignment="JUSTIFY" />
-      <TextArea fx:id="LCD" editable="false" layoutX="41.0" layoutY="29.0" prefHeight="115.0" prefWidth="261.0" wrapText="true" AnchorPane.bottomAnchor="401.0" AnchorPane.leftAnchor="41.0" AnchorPane.rightAnchor="32.0" AnchorPane.topAnchor="29.0" />
+      <Button fx:id="bt_equals" layoutX="321.0" layoutY="453.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="=" textAlignment="JUSTIFY" />
+      <Button fx:id="bt_plus" layoutX="321.0" layoutY="383.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="+" textAlignment="JUSTIFY" />
+      <Button fx:id="bt_minus" layoutX="321.0" layoutY="313.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="-" textAlignment="JUSTIFY" />
+      <Button fx:id="bt_mul" layoutX="321.0" layoutY="243.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="*" textAlignment="JUSTIFY" />
+      <Button fx:id="bt_div" layoutX="321.0" layoutY="173.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="/" textAlignment="JUSTIFY" />
+      <Button fx:id="bt_reset" layoutX="251.0" layoutY="453.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="C" textAlignment="JUSTIFY" />
+      <Button fx:id="bt_3" layoutX="251.0" layoutY="383.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="3" textAlignment="JUSTIFY" />
+      <Button fx:id="bt_6" layoutX="251.0" layoutY="313.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="6" textAlignment="JUSTIFY" />
+      <Button fx:id="bt_9" layoutX="251.0" layoutY="243.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="9" textAlignment="JUSTIFY" />
+      <Button fx:id="bt_0" layoutX="181.0" layoutY="453.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="0" textAlignment="JUSTIFY" />
+      <Button fx:id="bt_2" layoutX="181.0" layoutY="383.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="2" textAlignment="JUSTIFY" />
+      <Button fx:id="bt_5" layoutX="181.0" layoutY="313.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="5" textAlignment="JUSTIFY" />
+      <Button fx:id="bt_8" layoutX="181.0" layoutY="243.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="8" textAlignment="JUSTIFY" />
+      <Button fx:id="bt_dot" layoutX="111.0" layoutY="453.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="." textAlignment="JUSTIFY" />
+      <Button fx:id="bt_1" layoutX="111.0" layoutY="383.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="1" textAlignment="JUSTIFY" />
+      <Button fx:id="bt_4" layoutX="111.0" layoutY="313.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="4" textAlignment="JUSTIFY" />
+      <Button fx:id="bt_7" layoutX="111.0" layoutY="243.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="7" textAlignment="JUSTIFY" />
+      <Button fx:id="bt_Right_scobe" layoutX="251.0" layoutY="173.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text=")" textAlignment="JUSTIFY" />
+      <Button fx:id="bt_Left_scobe" layoutX="181.0" layoutY="173.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="(" textAlignment="JUSTIFY" />
+      <Button fx:id="bt_pow" layoutX="111.0" layoutY="173.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="^" textAlignment="JUSTIFY" />
+      <TextArea fx:id="LCD" editable="false" layoutX="41.0" layoutY="29.0" prefHeight="122.0" prefWidth="330.0" wrapText="true" AnchorPane.bottomAnchor="394.0" AnchorPane.leftAnchor="41.0" AnchorPane.rightAnchor="22.0" AnchorPane.topAnchor="29.0" />
+      <Button fx:id="bt_dot1" layoutX="41.0" layoutY="453.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="♂" textAlignment="JUSTIFY" />
+      <Button fx:id="bt_11" layoutX="41.0" layoutY="383.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="gay" textAlignment="JUSTIFY" />
+      <Button fx:id="bt_41" layoutX="41.0" layoutY="313.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="♂" textAlignment="JUSTIFY" />
+      <Button fx:id="bt_factorial" layoutX="41.0" layoutY="243.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="!" textAlignment="JUSTIFY" />
+      <Button fx:id="bt_del" layoutX="41.0" layoutY="173.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="del" textAlignment="JUSTIFY" />
    </children>
 </AnchorPane>
